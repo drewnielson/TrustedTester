@@ -1,7 +1,4 @@
-NOTE: All _**already certified**_ Trusted Testers and Baseline work/discussions should use _**Trusted Tester 5.1 or above, the updated version**_ of this process at https://github.com/Section508Coordinators/TrustedTester5.1.
-
-_**This version**_ of Trusted Tester should _**only**_ be used for the _**current certification training and exam**_ until it has been updated to align with 5.1 or above.
-
+**NOTE:** This version of the Trusted Tester repository is a fork from the repository maintained by the Department of Homeland Security. This fork is intended only for the purposes of a providing a web-based version of version 5.1.3 of the test process for browsing and reading via a web browser. The Trusted Tester process document maintained by the Department of Homeland security is available at https://github.com/Section508Coordinators/TrustedTester5.1.
 
 # Trusted Tester
 
