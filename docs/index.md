@@ -1,122 +1,45 @@
 > Trusted Tester Section 508 Conformance Test Process for Web
+[Skip to Table of Contents](#table-of-contents) `|` [Skip to Content](#about-this-document) `|` [Skip to Tests](#section-508-conformance-tests)
 # Trusted Tester: Section 508 Conformance Test Process For Web
 April 2024 `|` Version 5.1.3
 
 This is a single-page, HTML version of the Trusted Tester test process for Web, version 5.1.3. This version is maintained in a [personal fork](https://github.com/drewnielson/TrustedTester) of the original repository solely for ease of use and browsing the test process via a single web page. Version 5.0 of the Trusted Tester test process for web is available via [https://section508coordinators.github.io/TrustedTester/](https://section508coordinators.github.io/TrustedTester/). The latest version of the test process is also available for download as a PDF in a separate repository: [https://github.com/Section508Coordinators/TrustedTester5.1](https://github.com/Section508Coordinators/TrustedTester5.1).
 
-# Table of Contents {#table-of-contents .TOC-Heading}
+# Table of Contents
 
-[About This Document [1](#about-this-document)](#about-this-document)
-
-[Who Should Use this Document
-[1](#who-should-use-this-document)](#who-should-use-this-document)
-
-[Differences from Previous Versions (5.0 to 5.1.2)
-[1](#differences-from-previous-versions-5.0-to-5.1.2)](#differences-from-previous-versions-5.0-to-5.1.2)
-
-[Harmonized Baseline Alignment
-[1](#harmonized-baseline-alignment)](#harmonized-baseline-alignment)
-
-[How this Document is Structured
-[1](#how-this-document-is-structured)](#how-this-document-is-structured)
-
-[Web Content Tests Only
-[1](#web-content-tests-only)](#web-content-tests-only)
-
-[Testing Order [2](#testing-order)](#testing-order)
-
-[Issues Not Covered in This Test Process
-[2](#issues-not-covered-in-this-test-process)](#issues-not-covered-in-this-test-process)
-
-[The Rationale for Each Test
-[2](#the-rationale-for-each-test)](#the-rationale-for-each-test)
-
-[Test Environment [3](#test-environment)](#test-environment)
-
-[Testing Tools [3](#testing-tools)](#testing-tools)
-
-[Operating Systems [3](#operating-systems)](#operating-systems)
-
-[Browsers [4](#browsers)](#browsers)
-
-[Conformance Reporting Requirements
-[5](#conformance-reporting-requirements)](#conformance-reporting-requirements)
-
-[Section 508 Conformance Tests
-[6](#section-508-conformance-tests)](#section-508-conformance-tests)
-
-[1. Conforming Alternate Version (CAV) and Non-Interference
-[7](#conforming-alternate-version-cav-and-non-interference)](#conforming-alternate-version-cav-and-non-interference)
-
-[2. Auto-Playing and Auto-Updating Content
-[13](#auto-playing-and-auto-updating-content)](#auto-playing-and-auto-updating-content)
-
-[3. Flashing [18](#flashing)](#flashing)
-
-[4. Keyboard Access and Focus
-[19](#keyboard-access-and-focus)](#keyboard-access-and-focus)
-
-[5. Forms [25](#forms)](#forms)
-
-[6. Links [32](#links)](#links)
-
-[7. Images [34](#images)](#images)
-
-[8. Adjustable Time Limits
-[40](#adjustable-time-limits)](#adjustable-time-limits)
-
-[9. Repetitive Content [42](#repetitive-content)](#repetitive-content)
-
-[10. Content Structure [46](#content-structure)](#content-structure)
-
-[11. Language [50](#language)](#language)
-
-[12. Page Titles, Frames, and iFrames
-[53](#page-titles-frames-and-iframes)](#page-titles-frames-and-iframes)
-
-[13. Sensory Characteristics and Contrast
-[56](#sensory-characteristics-and-contrast)](#sensory-characteristics-and-contrast)
-
-[14. Tables [60](#tables)](#tables)
-
-[15. CSS Positioning [64](#css-positioning)](#css-positioning)
-
-[16. Pre-Recorded Audio-Only, Video-Only, and Animations
-[65](#pre-recorded-audio-only-video-only-and-animations)](#pre-recorded-audio-only-video-only-and-animations)
-
-[17. Synchronized Media [68](#synchronized-media)](#synchronized-media)
-
-[18. Resize Text [74](#resize-text)](#resize-text)
-
-[19. Multiple Ways [75](#multiple-ways)](#multiple-ways)
-
-[20. Parsing [76](#parsing)](#parsing)
-
-[Appendix A: Test Process Mapping
-[77](#appendix-a-test-process-mapping)](#appendix-a-test-process-mapping)
-
-[Test to Section 508/WCAG Requirement and Baseline Test (cross-reference
-table)
-[77](#test-to-section-508wcag-requirement-and-baseline-test-cross-reference-table)](#test-to-section-508wcag-requirement-and-baseline-test-cross-reference-table)
-
-[Section 508/WCAG Requirement to Trusted Tester Test and Baseline Test
-(cross-reference table)
-[80](#section-508wcag-requirement-to-trusted-tester-test-and-baseline-test-cross-reference-table)](#section-508wcag-requirement-to-trusted-tester-test-and-baseline-test-cross-reference-table)
-
-[Appendix B: Document Change Log
-[82](#appendix-b-document-change-log)](#appendix-b-document-change-log)
-
-[Appendix C: Test Process Quick Reference
-[89](#appendix-c-test-process-quick-reference)](#appendix-c-test-process-quick-reference)
-
-[Quick Reference with Test Conditions
-[89](#quick-reference-with-test-conditions)](#quick-reference-with-test-conditions)
-
-[One-Page Quick Reference -- Test Names Only
-[93](#one-page-quick-reference-test-names-only)](#one-page-quick-reference-test-names-only)
-
-[Appendix D: ANDI Workarounds
-[94](#appendix-d-andi-workarounds)](#appendix-d-andi-workarounds)
+  * [About This Document](#about-this-document)
+  * [Test Environment ](#test-environment)
+  * [Testing Tools ](#testing-tools)
+  * [Conformance Reporting Requirements](#conformance-reporting-requirements)
+  * [Section 508 Conformance Tests](#section-508-conformance-tests)
+    1. [Conforming Alternate Version (CAV) and Non-Interference](#conforming-alternate-version-cav-and-non-interference)
+    2. [Auto-Playing and Auto-Updating Content](#auto-playing-and-auto-updating-content)
+    3. [Flashing](#flashing)
+    4. [Keyboard Access and Focus](#keyboard-access-and-focus)
+    5. [Forms ](#forms)
+    6. [Links ](#links)
+    7. [Images](#images)
+    8. [Adjustable Time Limits](#adjustable-time-limits)
+    9. [Repetitive Content](#repetitive-content)
+    10. [Content Structure](#content-structure)
+    11. [Language](#language)
+    12. [Page Titles, Frames, and iFrames](#page-titles-frames-and-iframes)
+    13. [Sensory Characteristics and Contrast](#sensory-characteristics-and-contrast)
+    14. [Tables](#tables)
+    15. [CSS Positioning](#css-positioning)
+    16. [Pre-Recorded Audio-Only, Video-Only, and Animations](#pre-recorded-audio-only-video-only-and-animations)
+    17. [Synchronized Media](#synchronized-media)
+    18. [Resize Text](#resize-text)
+    19. [Multiple Ways](#multiple-ways)
+    20. [Parsing](#parsing)
+  * [Appendix A: Test Process Mapping](#appendix-a-test-process-mapping)
+    * [Test to Section 508/WCAG Requirement and Baseline Test (cross-reference table)](#test-to-section-508wcag-requirement-and-baseline-test-cross-reference-table)
+    * [Section 508/WCAG Requirement to Trusted Tester Test and Baseline Test (cross-reference table)](#section-508wcag-requirement-to-trusted-tester-test-and-baseline-test-cross-reference-table)
+  * [Appendix B: Document Change Log](#appendix-b-document-change-log)
+    * [Appendix C: Test Process Quick Reference](#appendix-c-test-process-quick-reference)
+    * [Quick Reference with Test Conditions](#quick-reference-with-test-conditions)
+    * [One-Page Quick Reference -- Test Names Only](#one-page-quick-reference-test-names-only)
+  * [Appendix D: ANDI Workarounds](#appendix-d-andi-workarounds)
 
 # About This Document
 
@@ -575,14 +498,9 @@ tests **DO NOT APPLY**. Perform tests 2 through 20 on all versions.
 
 #### Check alt-version-conformant
 
-  -------------------------------------------------------------------------------------
-  Test Name                Test   Test Condition
-                           ID     
-  ------------------------ ------ -----------------------------------------------------
-  alt-version-conformant   1.A    The identified version passes all applicable Test
-                                  Conditions in this test process.
-
-  -------------------------------------------------------------------------------------
+  | Test Name | Test ID | Test Condition |
+  |-----------|---------| ---------------|
+  | alt-version-conformant |   1.A | The identified version passes all applicable Test Conditions in this test process. |
 
 ##### Applicability:
 
