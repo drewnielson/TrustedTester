@@ -376,10 +376,7 @@ WCAG defines a conforming alternate version (CAV) as a version that:
 
 4.  for which at least one of the following is true:
 
-    <ol type="a">
-        <li>the conforming version can be reached from the non-conforming page via an accessibility-supported mechanism, or</li>
-        <li>the non-conforming version can only be reached from the conforming version, or</li>
-        <li>the non-conforming version can only be reached from a conforming page that also provides a mechanism to reach the conforming version</li>
+    <ol type="a"><li>the conforming version can be reached from the non-conforming page via an accessibility-supported mechanism, or</li><li>the non-conforming version can only be reached from the conforming version, or</li><li>the non-conforming version can only be reached from a conforming page that also provides a mechanism to reach the conforming version</li>
     </ol>
 
 [This test process covers the four parts of the definition of conforming
